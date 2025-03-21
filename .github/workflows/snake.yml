@@ -15,17 +15,17 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/only-svg/github-contribution-grid-snake.svg?color_snake=#00FF00&color_dots=#CCFFCC,#99FF99,#66FF66,#33FF33,#00CC00
-            dist/only-svg/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#00FF00
-            dist/only-svg/github-contribution-grid-snake-blue.svg?color_snake=#00FF00&color_dots=#CCFFCC,#99FF99,#66FF66,#33FF33,#00CC00
+            dist/only-svg/github-contribution-grid-snake.svg?color_snake=#00FF00&color_dots=#66FF66,#33CC33,#009900,#007700,#005500&color_empty=#000000
+            dist/only-svg/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#00FF00&color_empty=#000000
+            dist/only-svg/github-contribution-grid-snake-blue.svg?color_snake=#00FF00&color_dots=#66FF66,#33CC33,#009900,#007700,#005500&color_empty=#000000
 
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/docker/github-contribution-grid-snake.svg?color_snake=#00FF00&color_dots=#CCFFCC,#99FF99,#66FF66,#33FF33,#00CC00
-            dist/docker/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#00FF00
-            dist/docker/github-contribution-grid-snake.gif?color_snake=#00FF00&color_dots=#CCFFCC,#99FF99,#66FF66,#33FF33,#00CC00
+            dist/docker/github-contribution-grid-snake.svg?color_snake=#00FF00&color_dots=#66FF66,#33CC33,#009900,#007700,#005500&color_empty=#000000
+            dist/docker/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#00FF00&color_empty=#000000
+            dist/docker/github-contribution-grid-snake.gif?color_snake=#00FF00&color_dots=#66FF66,#33CC33,#009900,#007700,#005500&color_empty=#000000
 
       - name: ensure the generated file exists
         run: |
