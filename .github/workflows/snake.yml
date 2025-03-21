@@ -1,28 +1,47 @@
-name: Generate Snake
+name: manual run
 
 on:
-  schedule:
-    - cron: "0 */12 * * *" # Runs every 12 hours
   workflow_dispatch:
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  generate:
     permissions:
       contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
     steps:
-      - uses: actions/checkout@v3
-      
-      - uses: Platane/snk@master
-        id: snake-gif
+      - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          gif_out_path: workflow/github-contribution-grid-snake.gif
-          svg_out_path: workflow/github-contribution-grid-snake.svg
-      
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+          outputs: |
+            dist/only-svg/github-contribution-grid-snake.svg?color_snake=#00FF00&color_dots=#CCFFCC,#99FF99,#66FF66,#33FF33,#00CC00
+            dist/only-svg/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#00FF00
+            dist/only-svg/github-contribution-grid-snake-blue.svg?color_snake=#00FF00&color_dots=#CCFFCC,#99FF99,#66FF66,#33FF33,#00CC00
+
+      - uses: Platane/snk@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: output
-          force: true
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/docker/github-contribution-grid-snake.svg?color_snake=#00FF00&color_dots=#CCFFCC,#99FF99,#66FF66,#33FF33,#00CC00
+            dist/docker/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#00FF00
+            dist/docker/github-contribution-grid-snake.gif?color_snake=#00FF00&color_dots=#CCFFCC,#99FF99,#66FF66,#33FF33,#00CC00
+
+      - name: ensure the generated file exists
+        run: |
+          ls dist
+          test -f dist/only-svg/github-contribution-grid-snake.svg
+          test -f dist/only-svg/github-contribution-grid-snake-dark.svg
+          test -f dist/only-svg/github-contribution-grid-snake-blue.svg
+
+          test -f dist/docker/github-contribution-grid-snake.svg
+          test -f dist/docker/github-contribution-grid-snake-dark.svg
+          test -f dist/docker/github-contribution-grid-snake.gif
+
+      - name: push github-contribution-grid-snake.svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v4.1.0
+        with:
+          target_branch: manual-run-output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
