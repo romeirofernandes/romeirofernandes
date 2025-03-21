@@ -2,7 +2,14 @@
 <h1>Hi there, I'm Romeiro 👋</h1>
 </div>
 
-![github-user-contribution](https://github.com/user-attachments/assets/dabaec54-5220-4445-a910-6619d56e0e7c)
+
+
+<!-- Dark Mode -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/romeirofernandes/romeirofernandes/blob/manual-run-output/docker/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/romeirofernandes/romeirofernandes/blob/manual-run-output/docker/github-contribution-grid-snake.svg">
+  <img alt="GitHub Snake Contribution Animation" src="https://github.com/romeirofernandes/romeirofernandes/blob/manual-run-output/docker/github-contribution-grid-snake.svg">
+</picture>
 
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&center=true&vCenter=true&width=500&lines=Full-Stack+Developer;AIML+Enthusiast;Problem+Solver" alt="Typing SVG" />
