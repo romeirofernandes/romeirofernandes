@@ -110,8 +110,8 @@ When I'm not coding, you'll find me **regretting FPL decisions.** 🎭
 
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=romeirofernandes&show_icons=true&theme=dark" alt="romeirofernandes" width="49%" />
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=romeirofernandes&layout=compact&theme=dark&langs_count=6" width="49%" height="195px"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=romeirofernandes&show_icons=true&theme=merko" alt="romeirofernandes" width="49%" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=romeirofernandes&layout=compact&theme=merko&langs_count=6" width="49%" height="195px"/>
 </p>
 
 <p align="center">
