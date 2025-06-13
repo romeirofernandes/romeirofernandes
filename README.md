@@ -109,11 +109,14 @@ When I'm not coding, you'll find me **regretting FPL decisions.** 🎭
 <br />
 
 
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=romeirofernandes&show_icons=true&theme=radical" />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=romeirofernandes&layout=compact&theme=radical" />
-</div>
+<p align="center">
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=romeirofernandes&show_icons=true&theme=tokyonight&hide=stars&count_private=true" width="49%" height="195px" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=romeirofernandes&layout=compact&theme=tokyonight&langs_count=6" width="49%" height="195px"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=romeirofernandes&theme=tokyo-night" width="98%" />
+</p>
 
 <br />
 <br />
