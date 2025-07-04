@@ -59,9 +59,9 @@
   <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=romeirofernandes&layout=compact&theme=merko&langs_count=6" width="49%" height="195px"/>
 </p>
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=romeirofernandes&theme=merko" width="98%" />
-</p>
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=romeirofernandes&theme=react-dark&hide_border=true&area=true" alt="Activity Graph"/>
+</div>
 
 <br />
 <br />
