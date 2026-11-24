@@ -1,6 +1,6 @@
 <table width="100%" border="1" cellpadding="8" cellspacing="0">
   <tr>
-    <td width="32%" align="center" valign="top"><a href="./assets/pfp-ascii.mp4"><img src="./assets/pfp-ascii-panel.gif" alt="animated ascii profile image" width="100%"></a></td>
+    <td width="32%" align="center" valign="top"><a href="./assets/pfp-ascii.mp4"><img src="./assets/pfp-ascii-panel-animated.gif" alt="animated ascii profile image" width="100%"></a></td>
     <td width="68%" valign="top" bgcolor="#000000"><pre><small>romeirofernandes@github ──────────────────────────────
 - profile
 . name: ........................................ romeiro fernandes
