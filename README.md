@@ -1,5 +1,5 @@
 <picture>
-  <source media="(max-width: 767px)" srcset="./assets/terminal-mobile.webp">
+  <source media="(max-width: 767px)" srcset="./assets/terminal-compact.webp">
   <img src="./assets/terminal.webp" width="100%" alt="Romeiro Fernandes’s terminal profile, with animated ASCII art of two hands. The profile text is available below.">
 </picture>
 
