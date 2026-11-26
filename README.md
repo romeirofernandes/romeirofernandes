@@ -2,7 +2,7 @@
   <source media="(max-width: 767px)" srcset="./assets/terminal-compact.webp">
   <img src="./assets/terminal.webp" width="100%" alt="Romeiro Fernandes’s terminal profile, with animated ASCII art of two hands.">
 </picture>
-
+<br>
 <p align="center">
   <a href="https://romeiro.dev">portfolio</a> ·
   <a href="https://blog.romeiro.dev">writing</a> ·
